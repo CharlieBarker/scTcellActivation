@@ -39,6 +39,10 @@ for i, adata in enumerate(adatas):
     if sp.issparse(adata.X):
         # Replace NaNs in the stored data with 0
         adata.X.data = np.nan_to_num(adata.X.data)
+
+    # 🔥 Save raw counts before any normalization/logging
+    adata.layers["counts"] = adata.X.copy()
+
     sc.pp.filter_genes(adata, min_cells=3)  # remove genes with 0 counts
     sc.pp.normalize_total(adata, target_sum=1e4)
     sc.pp.log1p(adata)
@@ -57,6 +61,9 @@ adata_combined = ad.concat(
     label='batch',
     keys=keys
 )
+
+print("Layers in combined object:", adata_combined.layers.keys())
+
 
 # Make cell names unique to avoid warnings
 adata_combined.obs_names_make_unique()
@@ -77,7 +84,7 @@ print(f"Selected {adata_combined.n_vars} highly variable genes")
 # -------------------------------
 # Step 5: Subsample cells (optional for memory)
 # -------------------------------
-n_cells = 10000
+n_cells = 30000
 if adata_combined.n_obs > n_cells:
     print(f"Step 5: Subsampling {n_cells} cells for memory efficiency...")
     idx = np.random.choice(adata_combined.n_obs, n_cells, replace=False)
