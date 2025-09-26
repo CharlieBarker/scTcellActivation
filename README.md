@@ -29,22 +29,20 @@
 
 ## 📊 Key Figures
 
-Final results are saved in **`src/figures/`**:
+- **UMAP after Harmony batch correction**  
+  ![umap_combat_umap](src/figures/umap_combat_umap.png)
 
-- **`umap_combat_umap.png`**  
-  UMAP of integrated dataset after Harmony batch correction, colored by dataset/batch.  
+- **Marker genes per Leiden cluster**  
+  ![rank_genes_groups_leiden_markers](src/figures/rank_genes_groups_leiden_markers.png)
 
-- **`rank_genes_groups_leiden_markers.png`**  
-  Marker genes per Leiden cluster, useful for manual cell type annotation.  
+- **Annotated UMAP (manual cell types)**  
+  ![umap_annotated](src/figures/umap_annotated.png)
 
-- **`umap_annotated.png`**  
-  UMAP colored by manually annotated immune cell types.  
+- **starCAT multinomial labels**  
+  ![umap_starcat_multinomial](src/figures/umap_starcat_multinomial.png)
 
-- **`umap_starcat_multinomial.png`**  
-  UMAP colored by starCAT multinomial cell state predictions.  
-
-- **`umap_starcat_binaries.png`**  
-  UMAP colored by starCAT binary activation and proliferation labels.  
+- **starCAT binary activation/proliferation labels**  
+  ![umap_starcat_binaries](src/figures/umap_starcat_binaries.png)
 
 ---
 
