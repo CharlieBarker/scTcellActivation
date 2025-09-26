@@ -41,6 +41,9 @@
 - **starCAT binary activation/proliferation labels**  
   ![umap_starcat_binaries](figures/umap_starcat_binaries.png)
 
+- **starCAT continuous scores**
+  ![umap_starcat_binaries](figures/umap_starcat_continuous.png)
+
 ---
 
 ## 💾 Outputs
