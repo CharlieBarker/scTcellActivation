@@ -1,0 +1,28 @@
+scores:
+  continuous:
+    - name: ASA
+      normalization: normalized
+      columns: [TIMD4/TIM3, ICOS/CD38, CTLA4/CD38, OX40/EBI3]
+
+    - name: Proliferation
+      normalization: normalized
+      columns: [CellCycle-G2M, CellCycle-S, CellCycle-Late-S]
+  discrete:
+    - name: ASA_binary
+      normalization: normalized
+      columns: [TIMD4/TIM3, ICOS/CD38, CTLA4/CD38, OX40/EBI3]
+      threshold: .0625
+
+    - name: Proliferation_binary
+      normalization: normalized
+      columns: [CellCycle-G2M, CellCycle-S, CellCycle-Late-S]
+      threshold: 0.1
+
+    - name: Multinomial_Label
+      normalization: normalized
+      file: multinomial_lineage_classifier.py
+      function: compute_lineage
+
+
+      
+    

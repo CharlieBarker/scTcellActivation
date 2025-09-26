@@ -6,7 +6,10 @@ import matplotlib.pyplot as plt
 import sys
 import seaborn as sns
 import starcat
+from starcat import starCAT
 import mygene
+import scipy.sparse as sp
+
 
 # -------------------------------
 # Step 0: Setup
