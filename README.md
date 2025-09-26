@@ -29,7 +29,7 @@
 
 ## 📊 Key Figures
 
-Final results are saved in **`figures/`**:
+Final results are saved in **`src/figures/`**:
 
 - **`umap_combat_umap.png`**  
   UMAP of integrated dataset after Harmony batch correction, colored by dataset/batch.  
