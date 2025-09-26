@@ -30,19 +30,16 @@
 ## 📊 Key Figures
 
 - **UMAP after Harmony batch correction**  
-  ![umap_combat_umap](src/figures/umap_combat_umap.png)
+  ![umap_combat_umap](figures/umap_combat_umap.png)
 
 - **Marker genes per Leiden cluster**  
-  ![rank_genes_groups_leiden_markers](src/figures/rank_genes_groups_leiden_markers.png)
-
-- **Annotated UMAP (manual cell types)**  
-  ![umap_annotated](src/figures/umap_annotated.png)
+  ![rank_genes_groups_leiden_markers](figures/rank_genes_groups_leiden_markers.png)
 
 - **starCAT multinomial labels**  
-  ![umap_starcat_multinomial](src/figures/umap_starcat_multinomial.png)
+  ![umap_starcat_multinomial](figures/umap_starcat_multinomial.png)
 
 - **starCAT binary activation/proliferation labels**  
-  ![umap_starcat_binaries](src/figures/umap_starcat_binaries.png)
+  ![umap_starcat_binaries](figures/umap_starcat_binaries.png)
 
 ---
 
