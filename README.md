@@ -32,6 +32,9 @@
 - **UMAP after Harmony batch correction**  
   ![umap_combat_umap](figures/umap_combat_umap.png)
 
+- **UMAP showing Leiden clusters**
+  ![umap_combat_umap](figures/umap_leiden.png)
+
 - **Marker genes per Leiden cluster**  
   ![rank_genes_groups_leiden_markers](figures/rank_genes_groups_leiden_markers.png)
 
